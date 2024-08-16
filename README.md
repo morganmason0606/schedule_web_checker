@@ -15,6 +15,7 @@ main.py is the file responsible for managing your websites. Add and delete websi
 
 check.py is the file responsible for checking changes to the website. To set up check.py, you need to set up a task.\
 # On Windows
+you can follow (this URL)[https://community.esri.com/t5/python-documents/schedule-a-python-script-using-windows-task/ta-p/915861]
 * search for the task scheduler app
 * on the right, select create a basic task. A window should pop up
 * give it a good name and description
