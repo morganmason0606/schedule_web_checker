@@ -1,6 +1,9 @@
 # schedule_web_checker
 Schedule checking a website for changes. Alert user when new change detected. Requires user set up. 
 
+By using this app, you agree to waive and hold harmless me from any and all claims, liabilities, damages, losses, or expenses arising from your use or inability to use the app. This waiver does not apply to claims of gross negligence, intentional misconduct, or any other liabilities that cannot be waived under applicable law.
+
+
 # Setup
 Anny command run should be run within 
 make sure you have python installed
