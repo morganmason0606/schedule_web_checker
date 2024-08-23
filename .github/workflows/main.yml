@@ -51,23 +51,11 @@ jobs:
           from: "morganmason0606@gmail.com"
           attachments: changes.txt
 
-      - name: Configure Git
+      - name: Commit jobs.db if changed
+        if: env.results_exist == 'true'
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-
-      - name: Check for changes in jobs.db
-        id: check_db_changes
-        run: |
           git add jobs.db
-          if git diff --cached --quiet; then
-            echo "db_changed=false" >> $GITHUB_ENV
-          else
-            echo "db_changed=true" >> $GITHUB_ENV
-          fi
-
-      - name: Commit jobs.db if changed
-        if: env.db_changed == 'true'
-        run: |
           git commit -m "Update jobs.db"
           git push
