@@ -59,3 +59,5 @@ jobs:
           git add jobs.db
           git commit -m "Update jobs.db"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT }}  # Use PAT instead of the default token
