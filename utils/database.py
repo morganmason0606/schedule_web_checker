@@ -44,6 +44,7 @@ class Database:
             self.conn = None
 
     def __del__(self):
+        self.conn.commit()
         self.close
 
     def get_jobs(self):

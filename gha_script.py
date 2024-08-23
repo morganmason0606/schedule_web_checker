@@ -53,7 +53,7 @@ def main():
                     changed.append(url)
                     if lastmodified:
                         checker.database.update_job(
-                            id, hash=None, lastmodified=lastmodified
+                            id, hash=None, lastmodified=get_http_date()
                         )
                     else:
                         checker.database.update_job(id, hash=hash, lastmodified=None)
