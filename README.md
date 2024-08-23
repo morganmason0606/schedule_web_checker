@@ -1,6 +1,9 @@
 # schedule_web_checker
 Schedule checking a website for changes. Alert user when new change detected. Requires user set up. 
 
+By using this app, you agree to waive and hold harmless me from any and all claims, liabilities, damages, losses, or expenses arising from your use or inability to use the app. This waiver does not apply to claims of gross negligence, intentional misconduct, or any other liabilities that cannot be waived under applicable law.
+
+
 # Setup
 Anny command run should be run within 
 make sure you have python installed
@@ -15,6 +18,7 @@ main.py is the file responsible for managing your websites. Add and delete websi
 
 check.py is the file responsible for checking changes to the website. To set up check.py, you need to set up a task.\
 # On Windows
+you can follow [this link to an example of how to set up a windows task](https://community.esri.com/t5/python-documents/schedule-a-python-script-using-windows-task/ta-p/915861)
 * search for the task scheduler app
 * on the right, select create a basic task. A window should pop up
 * give it a good name and description
