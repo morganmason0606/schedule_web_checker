@@ -50,3 +50,14 @@ jobs:
           to: "morganmason0606@gmail.com"
           from: "morganmason0606@gmail.com"
           attachments: changes.txt
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+      - name: Commit jobs.db
+        run: |
+          git add jobs.db
+          git commit -m "Update jobs.db"
+          git push
