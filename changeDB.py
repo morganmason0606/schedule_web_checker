@@ -38,7 +38,4 @@ if __name__ == "__main__":
 
     res = subprocess.run(['git', 'add', '.'], cwd=script_dir, capture_output=True, text=True)
     res = subprocess.run(['git', 'commit', '-m', '"updates"'], cwd=script_dir, capture_output=True, text=True)
-    print(res)
-
-
     res = subprocess.run(['git', 'push'], cwd=script_dir, capture_output=True, text=True)
