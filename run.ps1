@@ -1,4 +1,4 @@
-
+Set-Location -Path $PSScriptRoot
 git pull 
 python main.py
 git add . 
