@@ -63,6 +63,7 @@ def main():
             f.write(f"Last Checked {get_http_date()}\n")
             for url in changed:
                 f.write(url)
+                f.write('\n')
 
 if __name__ == "__main__":
     main()
