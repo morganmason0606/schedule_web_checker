@@ -64,6 +64,7 @@ def main():
             f.write(f"Last Checked {get_http_date()}\n")
             for url in changed:
                 f.write(url)
+                f.write('\n')
         root=tk.Tk()
         root.wm_attributes("-topmost", 1)
         root.withdraw()
